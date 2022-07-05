@@ -5,7 +5,7 @@ function RecipeCreate({recipes, setRecipes}) {
   const initialFormState = {
     name: "",
     cuisine: "",
-    photoUrl: "",
+    photo: "",
     ingredients: "",
     preparation: "",
     }
@@ -17,18 +17,15 @@ function RecipeCreate({recipes, setRecipes}) {
   // TODO: Add the required submit and change handlers
   
   const handleSubmit = (event) => {
-    event.preventDefault()
-    
-    console.log("formData:", formData)
-    console.log("recipes before:", recipes)                             
+    event.preventDefault()                           
                                  
-          
+          if (formData.name && formData.cuisine && formData.photo && formData.ingredients && formData.preparation ) {
      setRecipes([...recipes, formData])
     
     setFormData({...initialFormState})
-    console.log("recipes after:", recipes)  
+   
   
-  }
+  }}
   
   
    const handleInputChange = (event) => {
