@@ -14,7 +14,7 @@ function RecipeList({recipes, setRecipes}) {
    <tr key={index}> 
       <td>{recipe.name}</td>
       <td>{recipe.cuisine} </td>
-      <img src={recipe.photo} />
+      <img src={recipe.photo} alt={recipe.name}/>
       <td>{recipe.ingredients} </td>
       <td>{recipe.preparation} </td>
       <td><button name="delete" onClick={() => handleDelete(recipe.name)}>Delete</button></td>
@@ -24,6 +24,7 @@ function RecipeList({recipes, setRecipes}) {
   
   
   return (
+    
     <div className="recipe-list">
       <table>
         <thead>
