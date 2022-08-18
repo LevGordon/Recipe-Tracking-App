@@ -1,4 +1,6 @@
-https://levgordon.github.io/Recipe-Tracking-App/
+Deployed to heroku:
+
+https://recipe-tracking-app-lg.herokuapp.com/
 
 
 # Recipe-Tracking-App
